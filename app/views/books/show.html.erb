@@ -15,6 +15,13 @@
 <div class="col-md-4">
 	
 	<!-- Reviews here -->
+	<%= render @book.reviews %>
+	
+	<div>
+		<% if user_signed_in?%>
+			<%= link_to 'Add Review', new_book_review_path(@book) %>
+			<% end %>
+	</div>
 
 </div>
 
@@ -32,3 +39,13 @@
 
     <% end %>
 <% end %>
+
+<script>
+$('.review-rating').raty({
+	readOnly: true,
+	score: function() {
+		return $(this).attr('.data-score');
+	},
+	path: '/assets/'
+});
+</script>
