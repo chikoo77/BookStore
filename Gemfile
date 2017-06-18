@@ -20,6 +20,7 @@ gem 'simple_form', '~> 3.5'
 gem 'devise', '~> 4.3'
 gem 'paperclip', '~> 5.1'
 gem 'dotenv-rails'
+gem 'omniauth-google-oauth2'
 
 group :development, :test do
   gem 'byebug', platform: :mri
