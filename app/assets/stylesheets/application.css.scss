@@ -19,6 +19,25 @@
 
 /* Variables, mixins, etc.. */
 
+#notice-wrapper  {
+	position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: rgba(135, 216, 211, 0.85);
+    
+    .alert, .notice {
+    padding: 2.5rem 0;
+    text-align: center;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    }
+	
+}
+
 @mixin background-tile {
 	box-sizing: border-box;
 	background-color: #fff;
