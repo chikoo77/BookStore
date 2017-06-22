@@ -24,6 +24,7 @@ gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-github'
+gem 'friendly_id', '~> 5.2', '>= 5.2.1'
 
 group :development, :test do
   gem 'byebug', platform: :mri
